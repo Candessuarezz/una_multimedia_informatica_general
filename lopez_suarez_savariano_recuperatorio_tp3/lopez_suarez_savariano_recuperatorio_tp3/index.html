@@ -1,0 +1,229 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Portfolio Multimedia</title>
+    <link rel="stylesheet" href="estilos.css">
+</head>
+
+<body>
+
+    <header>
+        <nav class="navbar">
+            <ul class="nav-lista">
+                <li class="nav-boton"><a href="#" onclick="volver()">Inicio</a></li>
+                <li class="nav-boton">
+                    <a id="artistas" href="#">Artistas</a>
+                    <ul class="nav-sublista">
+                        <li><a href="#" onclick="mostrar('savariano')">Francisco Savariano</a></li>
+                        <li><a href="#" onclick="mostrar('lopez')">Brenda Lopez</a></li>
+                        <li><a href="#" onclick="mostrar('suarez')">Candela Suarez</a></li>
+                    </ul>
+                </li>
+                <li class="nav-boton"><a href="#" onclick="mostrar('contacto')">Contactanos</a></li>
+            </ul>
+        </nav>
+
+        <img src="img/banner-multi.jpg" alt="Descripción de imagen" class="banner">
+    </header>
+
+    <main>
+
+        <div class="artistas-container">
+            <a href="#" onclick="mostrar('lopez')">
+                <div id="artista-lopez"></div>
+            </a>
+            <a href="#" onclick="mostrar('savariano')">
+                <div id="artista-savariano"></div>
+            </a>
+            <a href="#" onclick="mostrar('suarez')">
+                <div id="artista-suarez"></div>
+            </a>
+
+        </div>
+
+        <article id="savariano" class="contenido" >
+            <div >
+                <div class="texto-artista">
+                    <h2>Francisco Savariano</h2>
+                    <h3><i>Game developer</i>, artista multimedial</h3>
+                    <p>Artista multimedial especializado en el desarrollo de videojuegos, con un estilo visual vibrante y cargado de personalidad. <br>Combina ilustración digital, diseño de personajes y narrativa interactiva para crear mundos lúdicos y memorables. Sus proyectos se caracterizan por un humor distintivo, estéticas caricaturescas y un fuerte enfoque en el storytelling visual. Con experiencia en la creación de arte conceptual, interfaces y elementos gráficos animados, busca expandir universos propios a través del juego, la creatividad y la experimentación.</p>
+                </div>
+            </div>
+
+           <div class="gallery">
+
+    <div class="imagenes">
+        <img src="img/ftfran/+UnFoR.jpg" alt="ft1"
+             onclick="abrirImagen('img/ftfran/+UnFoR.jpg')">
+        <aside>
+            <p>"El funeral del payaso Wang Paseca"</p>
+        </aside> 
+    </div>
+
+    <div class="imagenes">
+        <img src="img/ftfran/8_EHXE.jpg" alt="ft2"
+             onclick="abrirImagen('img/ftfran/8_EHXE.jpg')">
+        <aside>
+            <p>"Barbuja, el bardo granuja</p>
+        </aside> 
+    </div>
+
+    <div class="imagenes">
+        <img src="img/ftfran/wqI5TS.jpg" alt="ft3"
+             onclick="abrirImagen('img/ftfran/wqI5TS.jpg')">
+        <aside>
+            <p>"Chiquito"</p>
+        </aside> 
+    </div>
+
+    <div class="imagenes">
+        <img src="img/ftfran/zqBu_J.jpg" alt="ft4"
+             onclick="abrirImagen('img/ftfran/zqBu_J.jpg')">
+        <aside>
+            <p>"Our House"</p>
+        </aside> 
+    </div>
+
+</div>
+
+        </article>
+
+        <article id="lopez" class="contenido">
+            <h2>Brenda Lopez</h2>
+            <h3>Actriz, diseñadora gráfica y artista multimedial</h3>
+            <p>Artista multimedial cuya obra combina diseño gráfico, collage, fotografía y puesta en escena. <br>Su trabajo explora la tensión entre lo cotidiano y lo imaginario, articulando imágenes poéticas, síntesis visuales y elementos performáticos. A partir de una mirada influenciada por su formación en artes dramáticas, crea composiciones donde conviven figuras humanas, objetos simbólicos y espacios intervenidos. Su producción abarca desde collages conceptuales y piezas digitales hasta registros documentales y procesos de taller, construyendo narrativas visuales que reflexionan sobre la introspección, el trabajo, la identidad y la relación entre cuerpo y entorno.</p>
+<div>
+                  <div class="gallery">
+
+    <div class="imagenes">
+        <img src="img/ftbren/6.jpg" alt="ft1"
+             onclick="abrirImagen('img/ftbren/6.jpg')">
+        <aside>
+            <p>"Caos"</p>
+        </aside> 
+    </div>
+
+    <div class="imagenes">
+        <img src="img/ftbren/7.jpg" alt="ft2"
+             onclick="abrirImagen('img/ftbren/7.jpg')">
+        <aside>
+            <p>"Margaritas"</p>
+        </aside> 
+    </div>
+
+    <div class="imagenes">
+        <img src="img/ftbren/8.jpg" alt="ft3"
+             onclick="abrirImagen('img/ftbren/8.jpg')">
+        <aside>
+            <p>Producción de Stop Motion</p>
+        </aside> 
+    </div>
+
+    <div class="imagenes">
+        <img src="img/ftbren/9.jpg" alt="ft4"
+             onclick="abrirImagen('img/ftbren/9.jpg')">
+        <aside>
+            <p>Producción audiovisual de K&S films</p>
+        </aside> 
+    </div>
+
+</div>
+        </article>
+
+        <article id="suarez" class="contenido">
+            <h2>Candela Suarez</h2>
+            <h3>Actriz, productora y artista multimedial</h3>
+            <p>Artista multimedial en formación, con experiencia en producción audiovisual, doblaje y proyectos independientes. <br>Su enfoque combina creatividad, narración visual y trabajo colaborativo. Ha participado en producciones teatrales, cortometrajes y tareas de comunicación visual, desarrollando habilidades en edición, gestión de proyectos y sonido. Con una formación diversa en artes multimedia, psicodrama teatral y técnicas de voz, busca seguir explorando lenguajes expresivos y aportar versatilidad en entornos creativos y dinámicos.</p>
+
+           <div class="gallery">
+
+    <div class="imagenes">
+        <img src="img/ftcande/1.jpg" alt="ft1"
+             onclick="abrirImagen('img/ftcande/1.jpg')">
+        <aside>
+            <p>Bar Cerrado Producciones</p>
+        </aside> 
+    </div>
+
+    <div class="imagenes">
+        <img src="img/ftcande/2.jpg" alt="ft2"
+             onclick="abrirImagen('img/ftcande/2.jpg')">
+        <aside>
+            <p>Foto fija-"El robo"</p>
+        </aside> 
+    </div>
+
+    <div class="imagenes">
+        <img src="img/ftcande/3.jpg" alt="ft3"
+             onclick="abrirImagen('img/ftcande/3.jpg')">
+        <aside>
+            <p>Asistencia de arte en "Es una lucha"</p>
+        </aside> 
+    </div>
+
+    <div class="imagenes">
+        <img src="img/ftcande/4.jpg" alt="ft4"
+             onclick="abrirImagen('img/ftcande/4.jpg')">
+        <aside>
+            <p>"Es una lucha"</p>
+        </aside> 
+    </div>
+
+            <div class="puntos"></div>
+        </article>
+
+        <section id="contacto" class="contenido">
+            <h1>CONTACTANOS</h1>
+            <h3>Escribinos y en breve nos pondremos en contacto con vos.</h3>
+            <form id="form-contacto" action="/registrardatos.php" method="post">
+                <p>
+                    <label for="nombre">Nombre completo<span>*</span></label>
+                    <input type="text" name="introducir_nombre" id="nombre" required="obligatorio"
+                        placeholder="Escribe tu nombre">
+                </p>
+                <p>
+                    <label for="email">Email<span>*</span></label>
+                    <input type="email" name="introducir_email" id="email" required="obligatorio"
+                        placeholder="Escribe tu Email">
+                </p>
+                <p>
+                    <label for="telefono">Teléfono<span>*</span></label>
+                    <input type="tel" name="introducir_telefono" id="telefono" pattern="[0-9 ]{7,15}"
+                        required="obligatorio" placeholder="Escribe tu teléfono">
+                </p>
+                <p>
+                    <label for="mensaje">Mensaje</label>
+                    <textarea name="introducir_mensaje" id="mensaje" required="obligatorio"
+                        placeholder="Dejanos tu mensaje..."></textarea>
+                </p>
+                <button type="submit" name="enviar_formulario" id="enviar">
+                    <p>Enviar</p>
+                </button>
+                <p id="mensaje-enviado"></p>
+            </form>
+        </section>
+    </main>
+
+    <footer>
+        <div class="footer-contenido">
+            <p>¡Seguinos en las redes!</p>
+            <ul class="footer-iconos">
+                <li><a href="https://www.instagram.com/"><img src="img/instagram.png" alt="Instagram link"></a></li>
+                <li><a href="https://www.youtube.com/"><img src="img/youtube.png" alt="YouTube link"></a></li>
+                <li><a href="https://github.com/"><img src="img/github.png" alt="GitHub link"></a></li>
+            </ul>
+        </div>
+    </footer>
+
+    <script src="script.js"></script>
+<div id="visor" class="visor">
+    <img id="img-grande">
+</div>
+
+
+</body>
+
+</html>
